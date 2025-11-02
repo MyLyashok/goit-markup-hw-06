@@ -257,8 +257,6 @@ box-shadow: 0 1px 6px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.1
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-
-
 .mobile-menu-nav {
     margin-bottom: auto;
 }
@@ -435,4 +433,210 @@ screen and (min-width: 1158px) and (min-resolution: 2dppx) {
             url('../images/bg/dark-bg-main@2x-min.jpg');
     }
 }
+
 /* features section */
+
+.feature-svg {
+    display: none;
+}
+.feature-list {
+   display: flex; 
+   flex-wrap: wrap;
+   gap: 72px;
+}
+.feature-calc {
+    width: 100%;
+}
+.features-section {
+    padding: 96px 0;
+}
+.feature-title {
+    font-weight: 700;
+        font-size: 36px;
+        line-height: 1.11;
+        letter-spacing: 0.02em;
+        text-align: center;
+        color: #2e2f42;
+        margin-bottom: 8px;
+}
+.feature-text {
+    font-weight: 500;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+        color: #434455;
+}
+
+@media screen and (min-width: 768px) {
+    .feature-calc {
+width: calc((100% - 24px) / 2);
+}
+.feature-list {
+gap: 72px 24px;  
+}
+.feature-title {
+    text-align: left;
+}
+}
+
+@media screen and (min-width: 1158px) {
+.feature-calc {
+        width: calc((100% - 72px) / 4);
+    }
+.features-section {
+            padding: 120px 0;
+        }
+.feature-icon {
+    border: 1px solid #8e8f99;
+    border-radius: 4px;
+    width: 264px;
+    height: 112px;
+    background-color: #f4f4fd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 8px;
+}
+.feature-list {
+    flex-wrap: nowrap;
+    gap: 24px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.feature-svg {
+    display: flex;
+}
+.feature-title {
+     font-weight: 500;
+     font-size: 20px;
+     line-height: 1.2;
+     text-align: left;
+ }
+ .feature-text {
+     font-weight: 400;
+ }
+}
+
+/* team section */
+
+.name-item {
+    padding: 32px 0;
+}
+
+.team-link:hover,
+.team-link:focus {
+ background-color: #404bbf;
+}
+.team-section {
+    background-color: #f4f4fd;
+    padding: 96px 0;
+}
+.team-list {
+    display: flex;
+    flex-direction: column;
+    gap: 72px;
+    align-items: center;
+}
+
+.team-container {
+    text-align: center;
+}
+.team-link {
+    width: 100%;
+    height: 100%;
+    background-color: #4d5ae5;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.team-photo {
+    
+    background-color: #FFFFFF;
+    width: 264px;
+    border-radius: 0px 0px 4px 4px;
+    box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+}
+
+.team-name {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: #2e2f42;
+    margin-bottom: 8px;
+}
+
+.team-work {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: #434455;
+}
+
+.team-svg-li {
+    width: 40px;
+    height: 40px;
+    background-color: #4d5ae5;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.team-svg {
+    fill: var(--cloud, #f4f4fd);
+}
+
+.team-item {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    margin-top: 8px;
+}
+.portfolio,
+.team {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    text-align: center;
+    text-transform: capitalize;
+    color: #2e2f42;
+    margin-bottom: 72px;
+}
+
+@media screen and (min-width: 768px) {
+.team-list {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 64px 24px;
+    }
+.team-photo {
+    width: 264px;
+    }
+}
+
+@media screen and (min-width: 1158px) {
+    .team-list {
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 1.2;
+            letter-spacing: 0.02em;
+            text-align: center;
+            color: #2e2f42;
+    
+        }
+.team-photo {
+    width: calc((100% - 72px) / 4);
+}
+}
+
+/* portfolio section */
